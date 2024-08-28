@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="container mx-auto">
+    <div class="text-center my-10 space-y-5">
+        <h1 class="text-5xl font-semibold text-black">AI Universe Hub</h1>
+        <button class="btn bg-[#EB5757] text-white">Sort By Date</button>
+    </div>
+    <section id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- card 1 below -->
+        <!-- <div class="w-[450px] border p-7 space-y-3 rounded-2xl">
+            <img class="rounded-2xl" src="https://img.olhardigital.com.br/wp-content/uploads/2023/01/chatgpt_assistente.jpg" alt="" >
+            <h2 class="text-[25px] font-semibold">Features</h2>
+            <ol class="mt-1 space-y-1 list-decimal list-inside text-[#585858]">
+                <li>Natural language processing</li>
+                <li>Contextual understanding</li>
+                <li>Text generation</li>
+            </ol>
+            <hr class="h-px my-2 bg-gray-200 border-1 ">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-[25px] font-semibold">ChatGPT</h1>
+                    <p>11/01/2022</p>
+                </div>
+                <button class="btn rounded-full text-[#EB5757] bg-red-100"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div> -->
+    </section>
+    <!-- show all -->
+    <div id="show-all-btn" class="text-center my-10 ">
+        <button onclick="handleShowAll()" class="btn bg-[#EB5757] text-white">Show More</button>
+    </div>
+    <!-- modal -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="bg-white p-9 rounded-3xl">
+            <div id="modal-card-container" class="flex gap-5 max-w-[1000px]">
+                <!-- card 1 -->
+                <!-- <div class="w-[500px] bg-[#EB57570D] p-8 space-y-5 rounded-3xl border border-[#EB5757]">
+                    <h3 class="text-[25px] font-semibold">ChatGPT is an AI-powered chatbot platform that uses OpenAI's
+                        GPT technology to simulate human
+                        conversation.</h3>
+                    <div class=" flex justify-between gap-5">
+                        <div class="text-[#03A30A] font-bold p-6 bg-white rounded-2xl">
+                            <span>$10/month</span>
+                            <span>Basic</span>
+                        </div>
+                        <div class="text-[#03A30A] font-bold p-6 bg-white rounded-2xl">
+                            <span>$10/month</span>
+                            <span>Basic</span>
+                        </div>
+                        <div class="text-[#03A30A] font-bold p-6 bg-white rounded-2xl">
+                            <span>$10/month</span>
+                            <span>Basic</span>
+                        </div>
+                    </div>
+                    <div class=" flex justify-between">
+                        <div>
+                            <h2 class="text-[25px] font-semibold">Features</h2>
+                            <ul class="mt-2 space-y-1 list-disc list-inside">
+                                <li>Customizable responses</li>
+                                <li>Multilingual support</li>
+                                <li>Seamless integration</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="text-[25px] font-semibold">Integrations</h2>
+                            <ul class="mt-2 space-y-1 list-disc list-inside">
+                                <li>FB Messenger</li>
+                                <li>Slack</li>
+                                <li>Telegram</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- card 2 -->
+                <!-- <div class="w-[500px] p-8 space-y-5 rounded-3xl border">
+                    <img src="https://www.datanami.com/wp-content/uploads/2023/01/chat_gpt_shutterstock_Ebru-Omer.jpg"
+                        alt="">
+                    <h2 class="text-[25px] font-semibold">Hi, how are you doing today?</h2>
+                    <p>I'm doing well, thank you for asking. How can I assist you today?</p>
+                </div> -->
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button> -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <script src="script/universe.js"></script>
+</body>
+
+</html>
+
+<!-- modal-box -->
